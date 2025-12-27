@@ -1,5 +1,4 @@
 import { Quote } from "lucide-react";
-import IMG_3682 from '../../public/IMG_3682.JPG';
 
 interface AboutSectionProps {
   aboutImage: string;
@@ -17,7 +16,7 @@ const AboutSection = ({ aboutImage }: AboutSectionProps) => {
           <div className="relative animate-fade-up order-2 lg:order-1">
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-xl max-w-md mx-auto lg:max-w-none">
               <img
-                src={IMG_3682.src}
+                src="/IMG_3682.JPG"
                 alt="Netshedzo (Theodore) Tshitangano"
                 className="w-full h-full object-cover"
               />
