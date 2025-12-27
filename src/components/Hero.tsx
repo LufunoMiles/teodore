@@ -1,5 +1,6 @@
 import { ArrowDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from 'next/image';
 
 interface HeroProps {
   heroImage: string;
@@ -29,21 +30,22 @@ const Hero = ({ heroImage }: HeroProps) => {
           {/* Headline */}
           <h1 className="mt-8 sm:mt-10 text-4xl sm:text-5xl md:text-display-md lg:text-display-lg font-serif font-semibold text-foreground leading-tight animate-fade-up stagger-2">
             Explore the Art of
-            <span className="block mt-2 text-gradient">Mindfulness</span>
+            <span className="block mt-2 text-primary">Mindfulness</span>
           </h1>
 
           {/* Hero Image */}
           <div className="relative w-full max-w-lg mx-auto mt-10 sm:mt-12 lg:mt-16 animate-fade-up stagger-3">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl relative">
+              {/* Decorative borders */}
+              <div className="absolute -inset-3 sm:-inset-4 border-2 border-primary/15 rounded-[2rem] -z-10" />
+              <div className="absolute -inset-6 sm:-inset-8 border border-primary/5 rounded-[2.5rem] -z-10" />
+              
               <img
-                src={heroImage}
+                src="/e9155879-4bb5-4077-ace8-4b1266f532bd.JPG"
                 alt="Theodore - Path to Awareness"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
-            {/* Decorative frame */}
-            <div className="absolute -inset-3 sm:-inset-4 border-2 border-primary/15 rounded-[2rem] -z-10" />
-            <div className="absolute -inset-6 sm:-inset-8 border border-primary/5 rounded-[2.5rem] -z-10" />
           </div>
 
           {/* Welcome Text */}

@@ -114,7 +114,7 @@ const Footer = () => {
               © {currentYear} Path To Awareness. All rights reserved.
             </p>
             <p className="text-primary-foreground/40 text-xs">
-              Made with ❤️ in South Africa
+              Made with ❤️ by Amour Tech 
             </p>
           </div>
         </div>

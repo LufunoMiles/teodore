@@ -77,7 +77,7 @@ const Newsletter = () => {
           </form>
 
           <p className="mt-4 text-sm text-primary-foreground/60">
-            No spam, unsubscribe anytime.
+            {/* No spam, unsubscribe anytime. */}
           </p>
         </div>
       </div>
